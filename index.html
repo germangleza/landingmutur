@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mototaxis TVS a Crédito en Chiapas | Mutur del Sureste</title>
+<meta name="description" content="Compra tu mototaxi TVS con enganche desde $15,000. Crédito en 48 hrs, entrega a todo Chiapas. ¡Cotiza por WhatsApp ahora!">
+<meta name="keywords" content="mototaxi Chiapas, mototaxi TVS crédito, comprar mototaxi Tuxtla, mototaxi Ocosingo, mototaxi enganche bajo">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b3e;
+    --navy-dark: #07102a;
+    --red: #2a9d1e;
+    --red-dark: #1e7a15;
+    --white: #ffffff;
+    --off-white: #f4f6f9;
+    --gray: #6b7280;
+    --gray-light: #e5e9f0;
+    --gold: #f5a623;
+    --text: #1a1a2e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--white);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ─── UTILITY ─── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  .btn-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .btn-wa:hover { background: #1aad52; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.35); }
+  .btn-wa svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding: 13px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.5);
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+  .btn-secondary:hover { border-color: white; background: rgba(255,255,255,0.1); }
+
+  /* ─── TOPBAR ─── */
+  .topbar {
+    background: var(--navy-dark);
+    color: rgba(255,255,255,0.8);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    padding: 8px 0;
+    text-align: center;
+  }
+  .topbar span { margin: 0 16px; }
+  .topbar strong { color: var(--gold); }
+
+  /* ─── NAVBAR ─── */
+  nav {
+    background: var(--navy);
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .nav-logo span { color: var(--red); }
+  .nav-logo small {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 2px;
+  }
+  .nav-cta { font-size: 0.9rem; padding: 10px 20px; }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 20px 70px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.015) 40px,
+        rgba(255,255,255,0.015) 41px
+      );
+    pointer-events: none;
+  }
+
+  .hero-red-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: var(--red);
+  }
+
+  .hero-accent {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(212,23,42,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    line-height: 1.0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.6;
+    margin-bottom: 36px;
+    max-width: 460px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .hero-right {
+    position: relative;
+  }
+
+  .price-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .price-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 20px 24px;
+    transition: all 0.3s;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+  }
+  .price-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: var(--red);
+    border-radius: 4px 0 0 4px;
+  }
+  .price-card.featured::before { background: var(--gold); }
+  .price-card:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); transform: translateX(4px); }
+
+  .price-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  .price-card-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .price-card-badge {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 2px;
+    background: rgba(245,166,35,0.2);
+    color: var(--gold);
+    border: 1px solid rgba(245,166,35,0.3);
+  }
+  .price-card-price {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: white;
+  }
+  .price-card-enganche {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.55);
+    margin-top: 4px;
+  }
+  .price-card-enganche strong { color: #25D366; }
+
+  /* ─── SECTION BASE ─── */
+  section { padding: 80px 20px; }
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .section-title.light { color: white; }
+  .section-body {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--gray);
+    max-width: 600px;
+  }
+  .section-body.light { color: rgba(255,255,255,0.7); }
+
+  /* ─── PROBLEMA ─── */
+  .problema {
+    background: var(--off-white);
+    padding: 80px 20px;
+  }
+  .problema-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .pain-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .pain-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: white;
+    border-radius: 6px;
+    padding: 16px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    transition: transform 0.2s;
+  }
+  .pain-list li:hover { transform: translateX(4px); }
+  .pain-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(212,23,42,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1rem;
+  }
+
+  .problema-right {
+    position: relative;
+  }
+  .stat-card {
+    background: var(--navy);
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--red);
+  }
+  .stat-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+  }
+  .stat-label {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  .stat-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--red);
+    margin: 20px auto;
+  }
+
+  /* ─── SOLUCIÓN ─── */
+  .solucion {
+    background: var(--navy);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .solucion::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--red);
+  }
+  .solucion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .proceso-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 30px;
+  }
+  .step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 28px;
+  }
+  .step:last-child { padding-bottom: 0; }
+  .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 44px;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255,255,255,0.1);
+  }
+  .step-num {
+    width: 40px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: white;
+    flex-shrink: 0;
+  }
+  .step-text h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .step-text p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+  }
+
+  .solucion-right-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 36px;
+  }
+  .solucion-right-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  .solucion-right-card h3 span { color: var(--gold); }
+  .solucion-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .solucion-features li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.75);
+  }
+  .solucion-features li::before {
+    content: '✓';
+    width: 22px;
+    height: 22px;
+    background: rgba(37,211,102,0.15);
+    color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ─── DIFERENCIADORES ─── */
+  .diferenciadores {
+    background: white;
+    padding: 80px 20px;
+  }
+  .dif-header { text-align: center; margin-bottom: 56px; }
+  .dif-header .section-body { margin: 0 auto; text-align: center; }
+  .dif-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .dif-card {
+    border: 1px solid var(--gray-light);
+    border-radius: 10px;
+    padding: 36px 28px;
+    text-align: center;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .dif-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--red);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .dif-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.1); transform: translateY(-4px); border-color: transparent; }
+  .dif-card:hover::after { transform: scaleX(1); }
+  .dif-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(13,27,62,0.06);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 20px;
+  }
+  .dif-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+  }
+  .dif-card p {
+    font-size: 0.92rem;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+
+  /* ─── MODELOS ─── */
+  .modelos {
+    background: var(--off-white);
+    padding: 80px 20px;
+  }
+  .modelos-header { text-align: center; margin-bottom: 50px; }
+  .modelos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .modelo-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .modelo-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.12); transform: translateY(-4px); }
+  .modelo-card.featured { border: 2px solid var(--navy); }
+  .modelo-header {
+    background: var(--navy);
+    padding: 28px 28px 20px;
+    position: relative;
+  }
+  .modelo-card.featured .modelo-header { background: var(--navy); }
+  .modelo-popular {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+  }
+  .modelo-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .modelo-tag {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .modelo-body { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+  .modelo-price {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .modelo-enganche {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-bottom: 24px;
+  }
+  .modelo-enganche strong { color: #16a34a; font-weight: 600; }
+  .modelo-specs {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+    flex: 1;
+  }
+  .modelo-specs li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-light);
+    font-size: 0.9rem;
+  }
+  .modelo-specs li:last-child { border-bottom: none; }
+  .spec-label { color: var(--gray); }
+  .spec-value { font-weight: 600; color: var(--navy); }
+  .spec-check { color: #16a34a; font-weight: 700; }
+  .spec-no { color: #9ca3af; }
+
+  /* ─── PRUEBA SOCIAL ─── */
+  .social-proof {
+    background: var(--navy);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .social-proof::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--red);
+  }
+  .social-header { text-align: center; margin-bottom: 50px; }
+  .social-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 56px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 56px;
+  }
+  .social-stat {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.04);
+  }
+  .social-stat .num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .social-stat .lbl {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.55);
+    margin-top: 6px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .testimonial {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 24px;
+    transition: all 0.3s;
+  }
+  .testimonial:hover { background: rgba(255,255,255,0.1); }
+  .testimonial-stars {
+    color: var(--gold);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+  .testimonial p {
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .author-avatar {
+    width: 38px;
+    height: 38px;
+    background: var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
+    flex-shrink: 0;
+  }
+  .author-info { line-height: 1.3; }
+  .author-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: white;
+    text-transform: uppercase;
+  }
+  .author-place {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* ─── FAQ ─── */
+  .faq {
+    background: white;
+    padding: 80px 20px;
+  }
+  .faq-header { text-align: center; margin-bottom: 50px; }
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border: 1px solid var(--gray-light);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .faq-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+  .faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 24px;
+    cursor: pointer;
+    background: white;
+    user-select: none;
+  }
+  .faq-q span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+  }
+  .faq-toggle {
+    width: 24px;
+    height: 24px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+    transition: all 0.2s;
+  }
+  .faq-item.open .faq-toggle { background: var(--red); transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-item.open .faq-a { max-height: 200px; }
+  .faq-a-inner {
+    padding: 0 24px 22px;
+    font-size: 0.92rem;
+    color: var(--gray);
+    line-height: 1.65;
+    border-top: 1px solid var(--gray-light);
+    padding-top: 16px;
+  }
+
+  /* ─── CTA FINAL ─── */
+  .cta-final {
+    background: var(--red);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .cta-final::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 30px,
+      rgba(0,0,0,0.04) 30px,
+      rgba(0,0,0,0.04) 31px
+    );
+    pointer-events: none;
+  }
+  .cta-final-inner { position: relative; z-index: 2; }
+  .cta-final h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .cta-final p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 36px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  .cta-final .btn-wa {
+    background: white;
+    color: var(--red);
+    font-size: 1.15rem;
+    padding: 18px 40px;
+  }
+  .cta-final .btn-wa svg { fill: var(--red); }
+  .cta-final .btn-wa:hover { background: var(--navy); color: white; }
+  .cta-final .btn-wa:hover svg { fill: white; }
+  .cta-locations {
+    margin-top: 28px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cta-locations span {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .cta-locations span::before { content: '📍'; font-size: 0.9rem; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--navy-dark);
+    padding: 32px 20px;
+    text-align: center;
+  }
+  footer p {
+    color: rgba(255,255,255,0.35);
+    font-size: 0.82rem;
+  }
+  footer strong { color: rgba(255,255,255,0.6); }
+
+  /* ─── WA FLOTANTE ─── */
+  .wa-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .wa-float-btn {
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  .wa-float-btn:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,0.6); }
+  .wa-float-btn svg { width: 30px; height: 30px; fill: white; }
+  .wa-tooltip {
+    background: var(--navy);
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    animation: pulse-tooltip 2s infinite;
+  }
+  .wa-tooltip::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: var(--navy);
+    border-right: none;
+  }
+  .wa-tooltip { position: relative; }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes pulse-tooltip {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 768px) {
+    .hero-content { grid-template-columns: 1fr; gap: 40px; }
+    .hero { min-height: auto; padding: 60px 20px 50px; }
+    .hero h1 { font-size: 2.6rem; }
+    .problema-grid { grid-template-columns: 1fr; }
+    .solucion-grid { grid-template-columns: 1fr; }
+    .dif-grid { grid-template-columns: 1fr; }
+    .modelos-grid { grid-template-columns: 1fr; }
+    .social-stats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .social-stat .num { font-size: 2rem; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .hero-ctas { flex-direction: column; }
+    .btn-wa, .btn-secondary { width: 100%; justify-content: center; }
+    nav .nav-cta { display: none; }
+    .topbar { font-size: 0.75rem; }
+    .topbar span { margin: 0 8px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>📍 <strong>Tuxtla Gutiérrez</strong> &amp; <strong>Ocosingo</strong></span>
+  <span>🕐 Crédito en <strong>48 horas</strong></span>
+  <span>🚚 Entrega a <strong>todo Chiapas</strong></span>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span style="color:var(--red)">MUTUR</span> <span style="color:white;font-weight:400">del Sureste</span>
+      <small>Distribuidora TVS · Chiapas</small>
+    </div>
+    <a href="https://wa.me/529xxxxxxxxx?text=Hola,%20quiero%20cotizar%20un%20mototaxi%20TVS" class="btn-wa nav-cta" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Cotizar ahora
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-red-bar"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">Distribuidora Oficial TVS · Chiapas</div>
+      <h1>Tu mototaxi.<br><em>Tu negocio.</em><br>Listo en 48 hrs.</h1>
+      <p class="hero-sub">Mototaxis TVS nuevos con crédito rápido y entrega a todo Chiapas. El flete varía según tu municipio o comunidad. Enganche desde <strong style="color:white">$15,000</strong>. Sin complicaciones.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/529xxxxxxxxx?text=Hola,%20quiero%20cotizar%20un%20mototaxi%20TVS" class="btn-wa" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Cotizar por WhatsApp
+        </a>
+        <a href="#modelos" class="btn-secondary">Ver modelos y precios ↓</a>
+      </div>
+    </div>
+    <div class="hero-right reveal">
+      <div class="price-cards">
+        <div class="price-card">
+          <div class="price-card-header">
+            <div class="price-card-name">TVS DELUX</div>
+          </div>
+          <div class="price-card-price">$98,400</div>
+          <div class="price-card-enganche">Enganche desde <strong>$15,000</strong> · Motor 200cc · Enfriamiento Aire</div>
+        </div>
+        <div class="price-card featured">
+          <div class="price-card-header">
+            <div class="price-card-name">TVS DURAMAX</div>
+            <div class="price-card-badge">Más potente</div>
+          </div>
+          <div class="price-card-price">$107,900</div>
+          <div class="price-card-enganche">Enganche desde <strong>$25,000</strong> · Motor 225cc · Luces LED</div>
+        </div>
+        <div style="background: rgba(37,211,102,0.08); border: 1px solid rgba(37,211,102,0.2); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+          <span style="font-size: 1.6rem;">⚡</span>
+          <div>
+            <div style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; color: #25D366; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Crédito en 48 horas</div>
+            <div style="font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-top: 2px;">Solo necesitas aval · Entregamos en todo Chiapas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="problema">
+  <div class="container">
+    <div class="problema-grid">
+      <div class="reveal">
+        <div class="section-label">El problema</div>
+        <h2 class="section-title">¿Cansado de trabajar para otros sin ver crecer tu dinero?</h2>
+        <p class="section-body">Rentar una moto o trabajar en unidad ajena significa que el dueño siempre gana más que tú. Cada semana que pasa sin tu propio mototaxi, es dinero que se va a otro bolsillo.</p>
+        <ul class="pain-list" style="margin-top: 24px;">
+          <li><div class="pain-icon">😤</div>No tienes $100K de contado y sientes que nunca podrás comprar</li>
+          <li><div class="pain-icon">😰</div>Miedo a que te rechacen el crédito por historial en buró</li>
+          <li><div class="pain-icon">😩</div>Vendedores que no dan seguimiento y tramitología eterna</li>
+          <li><div class="pain-icon">🔧</div>Motos baratas que se rompen a los meses y cuestan más en reparaciones</li>
+        </ul>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="stat-card">
+          <span class="stat-number">+150</span>
+          <div class="stat-label">Mototaxistas en Chiapas<br>ya trabajan con su TVS</div>
+          <div class="stat-divider"></div>
+          <span class="stat-number" style="font-size: 2.8rem;">48 hrs</span>
+          <div class="stat-label">Es todo lo que tardas<br>en tener tu crédito aprobado</div>
+          <div class="stat-divider"></div>
+          <span class="stat-number" style="font-size: 2.8rem;">$0</span>
+          <div class="stat-label">Costo por asesoría<br>y cotización sin compromiso</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCIÓN -->
+<section class="solucion">
+  <div class="container">
+    <div class="solucion-grid">
+      <div class="reveal">
+        <div class="section-label" style="color: rgba(245,166,35,0.9);">La solución</div>
+        <h2 class="section-title light">Mutur del Sureste: la forma más rápida de tener tu mototaxi en mano</h2>
+        <p class="section-body light">Con más de 150 mototaxistas satisfechos en Tuxtla y Ocosingo, somos la distribuidora TVS de confianza en el sureste. Te asesoramos desde el primer mensaje.</p>
+        <div class="proceso-steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <h4>Escríbenos por WhatsApp</h4>
+              <p>Sin formularios. Sin filas. Desde tu celular en segundos.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <h4>Revisamos tu crédito</h4>
+              <p>Evaluamos tu caso el mismo día. Necesitas aval y datos básicos.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <h4>Aprobación en 48 horas</h4>
+              <p>En menos de 2 días sabes si tu crédito fue aprobado.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-text">
+              <h4>Tu mototaxi llega a tu puerta</h4>
+              <p>Entregamos en todo Chiapas. El costo del flete depende de tu municipio o comunidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="solucion-right-card">
+          <h3>Tu próximo mototaxi es un <span>mensaje de WhatsApp</span></h3>
+          <ul class="solucion-features">
+            <li>Distribuidora oficial TVS en Chiapas</li>
+            <li>Crédito personalizado según tu situación</li>
+            <li>Entregamos a todo Chiapas (flete según destino)</li>
+            <li>Asesoría sin costo y sin presión</li>
+            <li>Garantía de fábrica incluida</li>
+            <li>Refacciones disponibles en Chiapas</li>
+            <li>Atención directa, sin intermediarios</li>
+          </ul>
+          <a href="https://wa.me/529xxxxxxxxx?text=Hola,%20quiero%20saber%20si%20aplico%20para%20cr%C3%A9dito" class="btn-wa" style="margin-top: 28px; width: 100%; justify-content: center;" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            ¿Aplico para crédito?
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIADORES -->
+<section class="diferenciadores">
+  <div class="container">
+    <div class="dif-header reveal">
+      <div class="section-label">Por qué elegirnos</div>
+      <h2 class="section-title">3 razones concretas por las que nos eligen en Chiapas</h2>
+    </div>
+    <div class="dif-grid">
+      <div class="dif-card reveal">
+        <div class="dif-icon">⚡</div>
+        <h3>Crédito en 48 horas</h3>
+        <p>Revisamos tu caso el mismo día que nos escribes. Solo necesitas aval y tus documentos básicos. Sin esperas de semanas ni respuestas en el aire.</p>
+      </div>
+      <div class="dif-card reveal reveal-delay-1">
+        <div class="dif-icon">🚚</div>
+        <h3>Entrega a todo Chiapas</h3>
+        <p>No tienes que venir a la sucursal. Entregamos en todo Chiapas — el costo del flete varía según tu municipio o comunidad. Consúltanos y te cotizamos.</p>
+      </div>
+      <div class="dif-card reveal reveal-delay-2">
+        <div class="dif-icon">🏆</div>
+        <h3>Marca TVS — calidad probada</h3>
+        <p>TVS es una de las marcas más vendidas en mototaxis de trabajo. Motor robusto, bajo mantenimiento y refacciones disponibles en Chiapas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELOS -->
+<section class="modelos" id="modelos">
+  <div class="container">
+    <div class="modelos-header reveal">
+      <div class="section-label">Nuestros modelos</div>
+      <h2 class="section-title">Elige tu mototaxi TVS</h2>
+      <p style="color: var(--gray); font-size: 1rem; margin-top: 10px;">¿No sabes cuál elegir? Escríbenos y te decimos cuál se adapta mejor a tu ruta y bolsillo.</p>
+    </div>
+    <div class="modelos-grid">
+      <div class="modelo-card reveal">
+        <div class="modelo-header">
+          <div class="modelo-name">DELUX</div>
+          <div class="modelo-tag">Motor 200cc · Enfriamiento Aire</div>
+        </div>
+        <div class="modelo-body">
+          <div class="modelo-price">$98,400</div>
+          <div class="modelo-enganche">Enganche desde <strong>$15,000</strong></div>
+          <ul class="modelo-specs">
+            <li><span class="spec-label">Motor</span><span class="spec-value">200 cc</span></li>
+            <li><span class="spec-label">Enfriamiento</span><span class="spec-value">Aire</span></li>
+            <li><span class="spec-label">Luces LED</span><span class="spec-no">—</span></li>
+            <li><span class="spec-label">Ideal para</span><span class="spec-value">Rutas cortas</span></li>
+            <li><span class="spec-label">Perfil</span><span class="spec-value">Económico y ágil</span></li>
+          </ul>
+          <a href="https://wa.me/529xxxxxxxxx?text=Hola,%20quiero%20info%20del%20mototaxi%20TVS%20DELUX" class="btn-wa" style="width: 100%; justify-content: center;" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Quiero el DELUX
+          </a>
+        </div>
+      </div>
+      <div class="modelo-card featured reveal reveal-delay-1">
+        <div class="modelo-header" style="position:relative;">
+          <div class="modelo-popular">Más potente</div>
+          <div class="modelo-name">DURAMAX</div>
+          <div class="modelo-tag">Motor 225cc · Enfriamiento Líquido</div>
+        </div>
+        <div class="modelo-body">
+          <div class="modelo-price">$107,900</div>
+          <div class="modelo-enganche">Enganche desde <strong>$25,000</strong></div>
+          <ul class="modelo-specs">
+            <li><span class="spec-label">Motor</span><span class="spec-value">225 cc</span></li>
+            <li><span class="spec-label">Enfriamiento</span><span class="spec-value">Líquido</span></li>
+            <li><span class="spec-label">Luces LED</span><span class="spec-check">✓ Delantera y trasera</span></li>
+            <li><span class="spec-label">Ideal para</span><span class="spec-value">Trabajo pesado</span></li>
+            <li><span class="spec-label">Perfil</span><span class="spec-value">Potencia y resistencia</span></li>
+          </ul>
+          <a href="https://wa.me/529xxxxxxxxx?text=Hola,%20quiero%20info%20del%20mototaxi%20TVS%20DURAMAX" class="btn-wa" style="width: 100%; justify-content: center;" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Quiero el DURAMAX
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRUEBA SOCIAL -->
+<section class="social-proof">
+  <div class="container">
+    <div class="social-header reveal">
+      <div class="section-label" style="color: rgba(245,166,35,0.85);">Prueba social</div>
+      <h2 class="section-title light">Lo que dicen quienes ya trabajan con su TVS</h2>
+    </div>
+    <div class="social-stats reveal">
+      <div class="social-stat">
+        <div class="num">+150</div>
+        <div class="lbl">Mototaxistas en Chiapas</div>
+      </div>
+      <div class="social-stat">
+        <div class="num">48h</div>
+        <div class="lbl">Tiempo promedio de crédito</div>
+      </div>
+      <div class="social-stat">
+        <div class="num">2</div>
+        <div class="lbl">Sucursales en Chiapas</div>
+      </div>
+    </div>
+    <div class="testimonials-grid reveal">
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Ya llevo 8 meses trabajando y no he tenido ninguna falla. El crédito me lo aprobaron en dos días y me trajeron la moto hasta mi casa."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">M</div>
+          <div class="author-info">
+            <div class="author-name">Don Marcos</div>
+            <div class="author-place">Ocosingo, Chiapas · TVS DELUX</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Tenía miedo de que no me aprobaran por el buró pero me explicaron todo y salió el crédito. Ahora trabajo para mí, no para nadie más."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">J</div>
+          <div class="author-info">
+            <div class="author-name">Juan Carlos</div>
+            <div class="author-place">Tuxtla Gutiérrez · TVS DURAMAX</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Me sorprendió que me entregaron en mi municipio. Pensé que tenía que ir a Tuxtla pero no, llegaron hasta acá. Muy buen servicio."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div class="author-info">
+            <div class="author-name">Roberto</div>
+            <div class="author-place">San Cristóbal, Chiapas · TVS DURAMAX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <div class="section-label">Preguntas frecuentes</div>
+      <h2 class="section-title">Resolvemos tus dudas</h2>
+    </div>
+    <div class="faq-grid reveal">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Puedo aplicar si tengo mal historial en buró?</span>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Sí evaluamos cada caso de manera individual. No todos los historiales son iguales. Escríbenos y con gusto revisamos tu situación sin compromiso.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Cuánto tarda el proceso de crédito?</span>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">En menos de 48 horas tienes respuesta, siempre que cuentes con aval y la documentación básica lista. Es uno de los procesos más rápidos de la región.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Hacen entrega en todo Chiapas?</span>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Sí, entregamos en todo Chiapas. El costo del flete varía según tu municipio o comunidad — pregúntanos y te damos el precio exacto sin compromiso.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Qué incluye la garantía del mototaxi?</span>
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Los mototaxis TVS incluyen garantía de fábrica. Al ser distribuidora autorizada, también te orientamos en el servicio y refacciones originales disponibles en Chiapas.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-final-inner reveal">
+      <h2>Hoy puedes dar el primer paso<br>hacia tu propio negocio.</h2>
+      <p>No necesitas tener todo el dinero hoy. Solo necesitas decidir que quieres cambiar tu situación. Nosotros hacemos el resto.</p>
+      <a href="https://wa.me/529xxxxxxxxx?text=Hola,%20quiero%20cotizar%20un%20mototaxi%20TVS%20sin%20compromiso" class="btn-wa" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Cotizar sin compromiso ahora
+      </a>
+      <div class="cta-locations">
+        <span>Tuxtla Gutiérrez, Chiapas</span>
+        <span>Ocosingo, Chiapas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>Mutur del Sureste</strong> — Distribuidora Oficial TVS en Chiapas<br>
+  Sucursales en Tuxtla Gutiérrez y Ocosingo · © 2025</p>
+</footer>
+
+<!-- WA FLOTANTE -->
+<div class="wa-float">
+  <div class="wa-tooltip">¡Cotiza aquí!</div>
+  <a href="https://wa.me/529xxxxxxxxx?text=Hola,%20quiero%20cotizar%20un%20mototaxi%20TVS" class="wa-float-btn" target="_blank" aria-label="Cotizar por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script>
+  // ─── FAQ TOGGLE ───
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // ─── SCROLL REVEAL ───
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ─── WA TOOLTIP AUTO HIDE ───
+  setTimeout(() => {
+    const tooltip = document.querySelector('.wa-tooltip');
+    if (tooltip) tooltip.style.opacity = '0';
+  }, 4000);
+  setTimeout(() => {
+    const tooltip = document.querySelector('.wa-tooltip');
+    if (tooltip) tooltip.style.display = 'none';
+  }, 4600);
+</script>
+</body>
+</html>
